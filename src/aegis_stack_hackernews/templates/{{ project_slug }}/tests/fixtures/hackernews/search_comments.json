@@ -1,0 +1,66 @@
+{
+ "exhaustive": {
+  "nbHits": false,
+  "typo": false
+ },
+ "exhaustiveNbHits": false,
+ "exhaustiveTypo": false,
+ "hits": [
+  {
+   "_tags": [
+    "comment",
+    "author_nemanja_codes",
+    "story_49922568"
+   ],
+   "author": "nemanja_codes",
+   "comment_text": "<p><pre><code>  Location: Serbia, GMT +2\n  Remote: Yes\n  Willing to relocate: Yes\n  Technologies: React, Next.js, JavaScript&#x2F;TypeScript, Node.js, Astro, TailwindCSS, Jest, Cypress, Prisma, Postgr",
+   "created_at": "2026-10-05T04:08:33Z",
+   "created_at_i": 1791173313,
+   "objectID": "49960569",
+   "parent_id": 49922568,
+   "story_id": 49922568,
+   "story_title": "Ask HN: Who wants to be hired? (October 2026)",
+   "updated_at": "2026-10-05T04:10:11Z"
+  },
+  {
+   "_tags": [
+    "comment",
+    "author_biglost",
+    "story_49746290"
+   ],
+   "author": "biglost",
+   "children": [
+    49749271
+   ],
+   "comment_text": "I love Python,i have been writting Python since 2.2 era, Is great. Bit it&#x27;s slow as hell, Django is slow, and the filters and custom shit to hit db on the template makes it slower. The parameters",
+   "created_at": "2026-09-18T01:23:19Z",
+   "created_at_i": 1789694599,
+   "objectID": "49749088",
+   "parent_id": 49748818,
+   "story_id": 49746290,
+   "story_title": "Flet 1.0 \u2013 Build cross-platform apps in Python",
+   "story_url": "https://flet.dev/",
+   "updated_at": "2026-09-18T02:09:32Z"
+  }
+ ],
+ "hitsPerPage": 2,
+ "nbHits": 123,
+ "nbPages": 62,
+ "page": 0,
+ "params": "query=fastapi+template&tags=comment&hitsPerPage=2&advancedSyntax=true&analyticsTags=backend",
+ "processingTimeMS": 20,
+ "processingTimingsMS": {
+  "_request": {
+   "queue": 21,
+   "roundTrip": 16
+  },
+  "fetch": {
+   "query": 9,
+   "scanning": 10,
+   "total": 20
+  },
+  "total": 20
+ },
+ "query": "fastapi template",
+ "serverTimeMS": 42
+}

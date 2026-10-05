@@ -1,0 +1,90 @@
+{
+ "exhaustive": {
+  "nbHits": false,
+  "typo": false
+ },
+ "exhaustiveNbHits": false,
+ "exhaustiveTypo": false,
+ "hits": [
+  {
+   "_tags": [
+    "story",
+    "author_ashvardanian",
+    "story_35042316",
+    "show_hn"
+   ],
+   "author": "ashvardanian",
+   "children": [
+    35042609,
+    35042699,
+    35042709,
+    35042733,
+    35042807,
+    35042895,
+    35043092,
+    35043349,
+    35044940,
+    35045476,
+    35046029,
+    35049669
+   ],
+   "created_at": "2023-03-06T15:41:23Z",
+   "created_at_i": 1678117283,
+   "num_comments": 90,
+   "objectID": "35042316",
+   "points": 290,
+   "story_id": 35042316,
+   "story_text": "A few months ago, I benchmarked FastAPI on an i9 MacBook Pro. I couldn&#x27;t believe my eyes. A primary REST endpoint to `sum` two integers took 6 milliseconds to evaluate. It is okay if you are targ",
+   "title": "Show HN: Faster FastAPI with simdjson and io_uring on Linux 5.19",
+   "updated_at": "2025-04-27T23:00:46Z",
+   "url": "https://github.com/unum-cloud/ujrpc"
+  },
+  {
+   "_tags": [
+    "story",
+    "author_tiangolo",
+    "story_22174412",
+    "show_hn"
+   ],
+   "author": "tiangolo",
+   "children": [
+    22174662,
+    22174710,
+    22176554,
+    22176851,
+    22177003,
+    22178290,
+    22179315,
+    22179719
+   ],
+   "created_at": "2020-01-28T21:48:11Z",
+   "created_at_i": 1580248091,
+   "num_comments": 17,
+   "objectID": "22174412",
+   "points": 250,
+   "story_id": 22174412,
+   "title": "Show HN: Thinc, a new deep learning library by the makers of spaCy and FastAPI",
+   "updated_at": "2025-01-16T22:34:46Z",
+   "url": "https://thinc.ai/"
+  }
+ ],
+ "hitsPerPage": 2,
+ "nbHits": 24,
+ "nbPages": 12,
+ "page": 0,
+ "params": "query=fastapi&tags=show_hn&numericFilters=points%3E50&hitsPerPage=2&advancedSyntax=true&analyticsTags=backend",
+ "processingTimeMS": 5,
+ "processingTimingsMS": {
+  "_request": {
+   "queue": 17,
+   "roundTrip": 14
+  },
+  "fetch": {
+   "query": 3,
+   "total": 4
+  },
+  "total": 5
+ },
+ "query": "fastapi",
+ "serverTimeMS": 22
+}
