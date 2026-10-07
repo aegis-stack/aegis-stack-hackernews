@@ -12,14 +12,36 @@ class HNQuery(BaseModel):
 
     model_config = ConfigDict(extra="forbid")
 
-    q: str = Field(min_length=1, description="The words to search for.")
-    tags: Literal["story", "comment", "show_hn", "ask_hn"] | None = Field(
-        default=None, description="Only stories, comments, Show HN or Ask HN."
+    # ``title`` labels each field in a form and ``description`` says what
+    # goes in it: the research page builds its new-watch form from these.
+    q: str = Field(
+        min_length=1,
+        title="Search for",
+        description="The words a post must match, e.g. open source personal finance.",
     )
-    min_points: int | None = Field(default=None, ge=0)
-    since: date | None = Field(default=None, description="Posted on or after.")
-    sort: Literal["relevance", "newest"] = "relevance"
-    limit: int = Field(default=50, ge=1, le=500)
+    tags: Literal["story", "comment", "show_hn", "ask_hn"] | None = Field(
+        default=None,
+        title="Type",
+        description="Usually story; Any also returns single comments with the words.",
+    )
+    min_points: int | None = Field(
+        default=None, ge=0, title="Min points", description="Skip posts below this."
+    )
+    since: date | None = Field(
+        default=None, title="Posted since", description="Only posts from this day on."
+    )
+    sort: Literal["relevance", "newest"] = Field(
+        default="relevance",
+        title="Sort",
+        description="Relevance: best matches first. Newest: latest first.",
+    )
+    limit: int = Field(
+        default=50,
+        ge=1,
+        le=500,
+        title="Results",
+        description="How many to keep each refresh, up to 500.",
+    )
 
 
 class HNData(BaseModel):

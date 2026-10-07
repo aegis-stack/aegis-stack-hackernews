@@ -137,3 +137,12 @@ async def test_a_watch_runs_through_the_research_service(
     assert found == len(_fixture("search_stories.json")["hits"])
     assert {str(c["id"]) for c in tree["children"]} <= stored
     assert [i.external_id for i in await svc.search("fastapi", kind="story")]
+
+
+def test_every_query_field_says_what_it_is_and_what_goes_in_it() -> None:
+    """A form built from the query (the research page's new-watch form)
+    labels each field by its title and explains it by its description."""
+    from app.services.hackernews.schemas import HNQuery
+
+    for name, info in HNQuery.model_fields.items():
+        assert info.title and info.description, name
