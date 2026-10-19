@@ -1,5 +1,5 @@
 """Hacker News as a research source: Algolia's hits and threads mapped onto
-the items every source shares (``app.services.research.registry``)."""
+the items every source shares (``app.services.research.service``)."""
 
 from collections.abc import Iterator
 from datetime import datetime
@@ -9,7 +9,7 @@ from typing import Any
 
 from app.services.hackernews import client
 from app.services.hackernews.schemas import HNData, HNQuery
-from app.services.research.registry import Source, SourceItem, register_source
+from app.services.research.service import Source, SourceItem, register_source
 
 _PARAGRAPH = re.compile(r"<p>|<br\s*/?>", re.IGNORECASE)
 _TAG = re.compile(r"<[^>]+>")
